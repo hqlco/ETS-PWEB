@@ -1,0 +1,539 @@
+/* Reset CSS */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form,
+label,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Style untuk kategori */
+.kategori ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kategori li {
+  flex: 1;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.kategori li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.kategori li:hover {
+  background-color: #555;
+}
+
+section {
+  margin: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-top: 10px;
+}
+
+form label,
+form input,
+form select,
+form textarea,
+form button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style untuk berita */
+.kategori-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kategori {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kategori h2 {
+  text-align: center;
+}
+
+.kategori ul {
+  list-style: none;
+  padding: 0;
+}
+
+.kategori li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.kategori a {
+  text-decoration: none;
+  color: #333;
+}
+
+.berita-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.berita {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.berita-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.berita-item img {
+  max-width: 100%;
+  height: auto;
+}
+/* Style untuk submit form */
+#submit-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#submit-form label {
+  font-weight: bold;
+}
+
+#submit-form input,
+#submit-form select,
+#submit-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#submit-form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#submit-form button:hover {
+  background-color: #555;
+}
+
+.lowongan-pekerjaan {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Membuat 2 kolom dengan lebar yang sama */
+  gap: 20px; /* Jarak antara elemen-elemen */
+}
+.lowongan-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.lowongan-list button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.lowongan-list p,
+.lowongan-list button {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.berita-terbaru {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Membuat 2 kolom dengan lebar yang sama */
+  gap: 20px; /* Jarak antara elemen-elemen */
+}
+
+.berita-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.berita-list img {
+  max-width: 200%;
+  height: auto;
+}
+.berita-terbaru-title {
+  grid-column: 1 / span 3; /* Mengambil 2 kolom */
+}
+
+.berita-list button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.berita-list p,
+.berita-list button {
+  margin-top: 10px;
+  text-align: center;
+}
+.cat-news {
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+
+.cat-news .col-md-6 {
+  margin-bottom: 30px;
+}
+
+.cat-news h2 {
+  color: #000000;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 3px double #000000;
+}
+
+.cat-news .cn-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.cat-news .cn-img img {
+  width: 100%;
+}
+
+.cat-news .cn-img:hover img {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.cat-news .cn-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px 10px 15px 20px;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.9)
+  );
+  display: flex;
+  align-items: flex-end;
+}
+
+.cat-news .cn-title a {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.cat-news .cn-title a:hover {
+  color: #ff6f61;
+}
+
+.cat-news .slick-prev,
+.cat-news .slick-next {
+  top: -62px;
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+  transition: 0.5s;
+  color: #ffffff;
+  background: #000000;
+  border-radius: 4px;
+}
+
+.cat-news .slick-prev {
+  left: calc(100% - 85px);
+}
+
+.cat-news .slick-next {
+  right: 14px;
+}
+
+.cat-news .slick-prev:hover,
+.cat-news .slick-prev:focus,
+.cat-news .slick-next:hover,
+.cat-news .slick-next:focus {
+  color: #ffffff;
+  background: #ff6f61;
+}
+
+.cat-news .slick-prev::before,
+.cat-news .slick-next::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 18px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.cat-news .slick-prev::before {
+  content: "\f104";
+}
+
+.cat-news .slick-next::before {
+  content: "\f105";
+}
+.tab-news {
+  position: relative;
+}
+
+.tab-news .col-md-6 {
+  margin-bottom: 60px;
+}
+
+.tab-news .nav.nav-pills .nav-link {
+  color: #ffffff;
+  background: #000000;
+  border-radius: 0;
+}
+
+.tab-news .nav.nav-pills .nav-link:hover,
+.tab-news .nav.nav-pills .nav-link.active {
+  color: #ffffff;
+  background: #ff6f61;
+}
+
+.tab-news .tab-content {
+  padding: 30px 15px 15px 15px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.tab-news .tn-news {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  background: #ffffff;
+}
+
+.tab-news .tn-img {
+  width: 150px;
+}
+
+.tab-news .tn-img img {
+  width: 150px;
+}
+
+.tab-news .tn-title {
+  padding: 10px 15px;
+}
+
+.tab-news .tn-title a {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+.tab-news .tn-title a:hover {
+  color: #ff6f61;
+}
+.top-news {
+  position: relative;
+  width: 100%;
+  padding: 30px 0 0 0;
+}
+
+.top-news .tn-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.top-news .tn-img img {
+  width: 100%;
+}
+
+.top-news .tn-img:hover img {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.top-news .tn-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px 10px 15px 20px;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.9)
+  );
+  display: flex;
+  align-items: flex-end;
+}
+
+.top-news .tn-title a {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.top-news .tn-left .tn-title a {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.top-news .tn-title a:hover {
+  color: #ff6f61;
+}
+
+.top-news .tn-left {
+  margin-bottom: 30px;
+}
+
+.top-news .tn-right {
+  margin-bottom: 60px;
+  padding: 0 30px;
+}
+
+.top-news .tn-right .col-md-6 {
+  padding: 0;
+}
+
+.top-news .slick-prev,
+.top-news .slick-next {
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+  transition: 0.5s;
+  color: #ffffff;
+  background: #000000;
+  border-radius: 4px;
+}
+
+.top-news .slick-prev {
+  left: 30px;
+}
+
+.top-news .slick-next {
+  right: 30px;
+}
+
+.top-news .slick-prev:hover,
+.top-news .slick-prev:focus,
+.top-news .slick-next:hover,
+.top-news .slick-next:focus {
+  color: #ffffff;
+  background: #ff6f61;
+}
+
+.top-news .slick-prev::before,
+.top-news .slick-next::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 18px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.top-news .slick-prev::before {
+  content: "\f104";
+}
+
+.top-news .slick-next::before {
+  content: "\f105";
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
